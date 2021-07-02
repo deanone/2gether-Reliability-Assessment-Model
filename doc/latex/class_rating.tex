@@ -1,0 +1,169 @@
+\section{Rating Class Reference}
+\label{class_rating}\index{Rating@{Rating}}
+
+
+{\ttfamily \#include $<$Rating.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Rating} ()
+\item 
+\textbf{ Rating} (int from\+Artist, int for\+Artwork, int stars)
+\item 
+\textbf{ $\sim$\+Rating} ()
+\item 
+void \textbf{ set\+From\+Artist} (int from\+Artist)
+\item 
+int \textbf{ get\+From\+Artist} () const
+\item 
+void \textbf{ set\+For\+Artwork} (int for\+Artwork)
+\item 
+int \textbf{ get\+For\+Artwork} () const
+\item 
+void \textbf{ set\+Stars} (int stars)
+\item 
+int \textbf{ get\+Stars} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file Rating.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_rating_aa02926f7a5545722ac6445c3218bf155}} 
+\index{Rating@{Rating}!Rating@{Rating}}
+\index{Rating@{Rating}!Rating@{Rating}}
+\subsubsection{Rating()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rating\+::\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. 
+
+Definition at line 3 of file Rating.\+cpp.
+
+\mbox{\label{class_rating_a5dfa184b1ea57b6fa83f62c92ac2e478}} 
+\index{Rating@{Rating}!Rating@{Rating}}
+\index{Rating@{Rating}!Rating@{Rating}}
+\subsubsection{Rating()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rating\+::\+Rating (\begin{DoxyParamCaption}\item[{int}]{from\+Artist,  }\item[{int}]{for\+Artwork,  }\item[{int}]{stars }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em from\+Artist} & the id of the \doxyref{Artist}{p.}{class_artist} object that made the \doxyref{Rating}{p.}{class_rating}. \\
+\hline
+{\em for\+Artwork} & the id of the \doxyref{Artwork}{p.}{class_artwork} object that received the \doxyref{Rating}{p.}{class_rating}. \\
+\hline
+{\em stars} & the actual rating value (integer in [1, 5]). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file Rating.\+cpp.
+
+\mbox{\label{class_rating_a6b1fecfba1e3e9285bad7c9006107b56}} 
+\index{Rating@{Rating}!````~Rating@{$\sim$\+Rating}}
+\index{````~Rating@{$\sim$\+Rating}!Rating@{Rating}}
+\subsubsection{$\sim$\+Rating()}
+{\footnotesize\ttfamily Rating\+::$\sim$\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+Definition at line 17 of file Rating.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_rating_a82fd8776b746ba7417d3630b742d5bc7}} 
+\index{Rating@{Rating}!get\+For\+Artwork@{get\+For\+Artwork}}
+\index{get\+For\+Artwork@{get\+For\+Artwork}!Rating@{Rating}}
+\subsubsection{get\+For\+Artwork()}
+{\footnotesize\ttfamily int Rating\+::get\+For\+Artwork (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the ID of the \doxyref{Artwork}{p.}{class_artwork} object that received the \doxyref{Rating}{p.}{class_rating}. \begin{DoxyReturn}{Returns}
+the ID of the \doxyref{Artwork}{p.}{class_artwork} object that received the \doxyref{Rating}{p.}{class_rating}. 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file Rating.\+cpp.
+
+\mbox{\label{class_rating_a3ead6a037799025d7d0be750087eca6a}} 
+\index{Rating@{Rating}!get\+From\+Artist@{get\+From\+Artist}}
+\index{get\+From\+Artist@{get\+From\+Artist}!Rating@{Rating}}
+\subsubsection{get\+From\+Artist()}
+{\footnotesize\ttfamily int Rating\+::get\+From\+Artist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the ID of the \doxyref{Artist}{p.}{class_artist} object that made the \doxyref{Rating}{p.}{class_rating}. \begin{DoxyReturn}{Returns}
+the ID of the \doxyref{Artist}{p.}{class_artist} object that made the \doxyref{Rating}{p.}{class_rating}. 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file Rating.\+cpp.
+
+\mbox{\label{class_rating_a408f5065b17765e19f292fb9041ed192}} 
+\index{Rating@{Rating}!get\+Stars@{get\+Stars}}
+\index{get\+Stars@{get\+Stars}!Rating@{Rating}}
+\subsubsection{get\+Stars()}
+{\footnotesize\ttfamily int Rating\+::get\+Stars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the actual rating value (integer in [1, 5]). \begin{DoxyReturn}{Returns}
+the actual rating value (integer in [1, 5]). 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file Rating.\+cpp.
+
+\mbox{\label{class_rating_a4f9dd5689d187e6ba3be69fc295bccd0}} 
+\index{Rating@{Rating}!set\+For\+Artwork@{set\+For\+Artwork}}
+\index{set\+For\+Artwork@{set\+For\+Artwork}!Rating@{Rating}}
+\subsubsection{set\+For\+Artwork()}
+{\footnotesize\ttfamily void Rating\+::set\+For\+Artwork (\begin{DoxyParamCaption}\item[{int}]{for\+Artwork }\end{DoxyParamCaption})}
+
+Sets the ID of the \doxyref{Artwork}{p.}{class_artwork} object that received the \doxyref{Rating}{p.}{class_rating}. 
+\begin{DoxyParams}{Parameters}
+{\em id} & the ID of the \doxyref{Artwork}{p.}{class_artwork} object that received the \doxyref{Rating}{p.}{class_rating}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Rating.\+cpp.
+
+\mbox{\label{class_rating_a2af223d841136dddc93766e83d666539}} 
+\index{Rating@{Rating}!set\+From\+Artist@{set\+From\+Artist}}
+\index{set\+From\+Artist@{set\+From\+Artist}!Rating@{Rating}}
+\subsubsection{set\+From\+Artist()}
+{\footnotesize\ttfamily void Rating\+::set\+From\+Artist (\begin{DoxyParamCaption}\item[{int}]{from\+Artist }\end{DoxyParamCaption})}
+
+Sets the ID of the \doxyref{Artist}{p.}{class_artist} object that made the \doxyref{Rating}{p.}{class_rating}. 
+\begin{DoxyParams}{Parameters}
+{\em id} & the ID of the \doxyref{Artist}{p.}{class_artist} object that made the \doxyref{Rating}{p.}{class_rating}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 21 of file Rating.\+cpp.
+
+\mbox{\label{class_rating_a9747bc949a6427fc2a99ea7aa044fb20}} 
+\index{Rating@{Rating}!set\+Stars@{set\+Stars}}
+\index{set\+Stars@{set\+Stars}!Rating@{Rating}}
+\subsubsection{set\+Stars()}
+{\footnotesize\ttfamily void Rating\+::set\+Stars (\begin{DoxyParamCaption}\item[{int}]{stars }\end{DoxyParamCaption})}
+
+Sets the actual rating value (integer in [1, 5]). 
+\begin{DoxyParams}{Parameters}
+{\em stars} & the actual rating value (integer in [1, 5]). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Rating.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Rating.\+h}\item 
+\textbf{ Rating.\+cpp}\end{DoxyCompactItemize}

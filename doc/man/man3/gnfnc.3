@@ -1,0 +1,50 @@
+.TH "gnfnc" 3 "Thu Jul 1 2021" "Version v1.0" "2gether - Reliability Assessment Model (RAM)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gnfnc
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBgetExecutablePath\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBgetExecutablePathAndMatchItWithFilename\fP (const std::string &fileName)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "std::string gnfnc::getExecutablePath ()"
+Returns the absolute path of the executable's directory\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the absolute path of the executable's directory\&. 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file GenericFunc\&.cpp\&.
+.SS "std::string gnfnc::getExecutablePathAndMatchItWithFilename (const std::string & fileName)"
+Returns the absolute path a file located in the executable's directory\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfileName\fP the name of the file (e\&.g\&., file\&.txt) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the absolute path of the file 
+.RE
+.PP
+
+.PP
+Definition at line 17 of file GenericFunc\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 2gether - Reliability Assessment Model (RAM) from the source code\&.

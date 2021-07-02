@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_rating" kind="class" language="C++" prot="public">
+    <compoundname>Rating</compoundname>
+    <includes refid="_rating_8h" local="no">Rating.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_rating_1a4625f570e3eaed7f97efc1ff33be9558" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Rating::fromArtist</definition>
+        <argsstring></argsstring>
+        <name>fromArtist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The id of the <ref refid="class_artist" kindref="compound">Artist</ref> object that made the <ref refid="class_rating" kindref="compound">Rating</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="7" column="1" bodyfile="Rating.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rating_1aa3433923cb2605bdf14b181ecce595b2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Rating::forArtwork</definition>
+        <argsstring></argsstring>
+        <name>forArtwork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The id of the <ref refid="class_artwork" kindref="compound">Artwork</ref> object that received the <ref refid="class_rating" kindref="compound">Rating</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="9" column="1" bodyfile="Rating.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rating_1ac737f530793613cb0ef3d89aa938f7d4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Rating::stars</definition>
+        <argsstring></argsstring>
+        <name>stars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual rating value (integer in [1, 5]). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="11" column="1" bodyfile="Rating.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_rating_1aa02926f7a5545722ac6445c3218bf155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Rating::Rating</definition>
+        <argsstring>()</argsstring>
+        <name>Rating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="17" column="1" bodyfile="Rating.cpp" bodystart="3" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rating_1a5dfa184b1ea57b6fa83f62c92ac2e478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Rating::Rating</definition>
+        <argsstring>(int fromArtist, int forArtwork, int stars)</argsstring>
+        <name>Rating</name>
+        <param>
+          <type>int</type>
+          <declname>fromArtist</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>forArtwork</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fromArtist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id of the <ref refid="class_artist" kindref="compound">Artist</ref> object that made the <ref refid="class_rating" kindref="compound">Rating</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>forArtwork</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id of the <ref refid="class_artwork" kindref="compound">Artwork</ref> object that received the <ref refid="class_rating" kindref="compound">Rating</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the actual rating value (integer in [1, 5]). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="25" column="1" bodyfile="Rating.cpp" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rating_1a6b1fecfba1e3e9285bad7c9006107b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Rating::~Rating</definition>
+        <argsstring>()</argsstring>
+        <name>~Rating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="30" column="1" bodyfile="Rating.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rating_1a2af223d841136dddc93766e83d666539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rating::setFromArtist</definition>
+        <argsstring>(int fromArtist)</argsstring>
+        <name>setFromArtist</name>
+        <param>
+          <type>int</type>
+          <declname>fromArtist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the ID of the <ref refid="class_artist" kindref="compound">Artist</ref> object that made the <ref refid="class_rating" kindref="compound">Rating</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_artist" kindref="compound">Artist</ref> object that made the <ref refid="class_rating" kindref="compound">Rating</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="36" column="1" bodyfile="Rating.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rating_1a3ead6a037799025d7d0be750087eca6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Rating::getFromArtist</definition>
+        <argsstring>() const</argsstring>
+        <name>getFromArtist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the ID of the <ref refid="class_artist" kindref="compound">Artist</ref> object that made the <ref refid="class_rating" kindref="compound">Rating</ref>. <simplesect kind="return"><para>the ID of the <ref refid="class_artist" kindref="compound">Artist</ref> object that made the <ref refid="class_rating" kindref="compound">Rating</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="42" column="1" bodyfile="Rating.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rating_1a4f9dd5689d187e6ba3be69fc295bccd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rating::setForArtwork</definition>
+        <argsstring>(int forArtwork)</argsstring>
+        <name>setForArtwork</name>
+        <param>
+          <type>int</type>
+          <declname>forArtwork</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the ID of the <ref refid="class_artwork" kindref="compound">Artwork</ref> object that received the <ref refid="class_rating" kindref="compound">Rating</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_artwork" kindref="compound">Artwork</ref> object that received the <ref refid="class_rating" kindref="compound">Rating</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="48" column="1" bodyfile="Rating.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rating_1a82fd8776b746ba7417d3630b742d5bc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Rating::getForArtwork</definition>
+        <argsstring>() const</argsstring>
+        <name>getForArtwork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the ID of the <ref refid="class_artwork" kindref="compound">Artwork</ref> object that received the <ref refid="class_rating" kindref="compound">Rating</ref>. <simplesect kind="return"><para>the ID of the <ref refid="class_artwork" kindref="compound">Artwork</ref> object that received the <ref refid="class_rating" kindref="compound">Rating</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="54" column="1" bodyfile="Rating.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rating_1a9747bc949a6427fc2a99ea7aa044fb20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rating::setStars</definition>
+        <argsstring>(int stars)</argsstring>
+        <name>setStars</name>
+        <param>
+          <type>int</type>
+          <declname>stars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the actual rating value (integer in [1, 5]). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the actual rating value (integer in [1, 5]). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="60" column="1" bodyfile="Rating.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rating_1a408f5065b17765e19f292fb9041ed192" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Rating::getStars</definition>
+        <argsstring>() const</argsstring>
+        <name>getStars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the actual rating value (integer in [1, 5]). <simplesect kind="return"><para>the actual rating value (integer in [1, 5]). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Rating.h" line="66" column="1" bodyfile="Rating.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Rating.h" line="5" column="1" bodyfile="Rating.h" bodystart="4" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_rating_1aa3433923cb2605bdf14b181ecce595b2" prot="private" virt="non-virtual"><scope>Rating</scope><name>forArtwork</name></member>
+      <member refid="class_rating_1a4625f570e3eaed7f97efc1ff33be9558" prot="private" virt="non-virtual"><scope>Rating</scope><name>fromArtist</name></member>
+      <member refid="class_rating_1a82fd8776b746ba7417d3630b742d5bc7" prot="public" virt="non-virtual"><scope>Rating</scope><name>getForArtwork</name></member>
+      <member refid="class_rating_1a3ead6a037799025d7d0be750087eca6a" prot="public" virt="non-virtual"><scope>Rating</scope><name>getFromArtist</name></member>
+      <member refid="class_rating_1a408f5065b17765e19f292fb9041ed192" prot="public" virt="non-virtual"><scope>Rating</scope><name>getStars</name></member>
+      <member refid="class_rating_1aa02926f7a5545722ac6445c3218bf155" prot="public" virt="non-virtual"><scope>Rating</scope><name>Rating</name></member>
+      <member refid="class_rating_1a5dfa184b1ea57b6fa83f62c92ac2e478" prot="public" virt="non-virtual"><scope>Rating</scope><name>Rating</name></member>
+      <member refid="class_rating_1a4f9dd5689d187e6ba3be69fc295bccd0" prot="public" virt="non-virtual"><scope>Rating</scope><name>setForArtwork</name></member>
+      <member refid="class_rating_1a2af223d841136dddc93766e83d666539" prot="public" virt="non-virtual"><scope>Rating</scope><name>setFromArtist</name></member>
+      <member refid="class_rating_1a9747bc949a6427fc2a99ea7aa044fb20" prot="public" virt="non-virtual"><scope>Rating</scope><name>setStars</name></member>
+      <member refid="class_rating_1ac737f530793613cb0ef3d89aa938f7d4" prot="private" virt="non-virtual"><scope>Rating</scope><name>stars</name></member>
+      <member refid="class_rating_1a6b1fecfba1e3e9285bad7c9006107b56" prot="public" virt="non-virtual"><scope>Rating</scope><name>~Rating</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

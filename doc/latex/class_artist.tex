@@ -1,0 +1,363 @@
+\section{Artist Class Reference}
+\label{class_artist}\index{Artist@{Artist}}
+
+
+{\ttfamily \#include $<$Artist.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Artist} ()
+\item 
+\textbf{ Artist} (int id)
+\item 
+\textbf{ $\sim$\+Artist} ()
+\item 
+void \textbf{ set\+ID} (int id)
+\item 
+int \textbf{ get\+ID} () const
+\item 
+void \textbf{ add\+R\+A\+Mrep} (double R\+A\+Mrep)
+\item 
+void \textbf{ add\+B\+E\+Nrep} (double B\+E\+Nrep)
+\item 
+void \textbf{ save\+R\+A\+Mreps} ()
+\item 
+void \textbf{ save\+B\+E\+Nreps} ()
+\item 
+void \textbf{ set\+Malicious} (bool malicious)
+\item 
+bool \textbf{ is\+Malicious} () const
+\item 
+void \textbf{ add\+Rating} (\textbf{ Rating} $\ast$rating)
+\item 
+void \textbf{ compute\+Average\+Rating\+Received} ()
+\item 
+double \textbf{ get\+Average\+Rating\+Received} () const
+\item 
+void \textbf{ compute\+Average\+Rating\+Given} ()
+\item 
+double \textbf{ get\+Average\+Rating\+Given} () const
+\item 
+void \textbf{ add\+Artwork} (int artwork\+ID, \textbf{ Artwork} $\ast$artwork)
+\item 
+\textbf{ Artwork} $\ast$ \textbf{ get\+Artwork} (int artwork\+ID)
+\item 
+std\+::map$<$ int, \textbf{ Artwork} $\ast$ $>$ $\ast$ \textbf{ get\+Artworks} ()
+\item 
+int \textbf{ get\+Num\+Of\+Artworks} ()
+\item 
+bool \textbf{ artwork\+Exists} (int artwork\+ID)
+\item 
+void \textbf{ print\+Artworks\+I\+Ds} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file Artist.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_artist_ad49ef7a2d2847076e737a2836e8915ab}} 
+\index{Artist@{Artist}!Artist@{Artist}}
+\index{Artist@{Artist}!Artist@{Artist}}
+\subsubsection{Artist()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Artist\+::\+Artist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. 
+
+Definition at line 10 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a486d55ca54ff3a9df584889466c7cc44}} 
+\index{Artist@{Artist}!Artist@{Artist}}
+\index{Artist@{Artist}!Artist@{Artist}}
+\subsubsection{Artist()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Artist\+::\+Artist (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em id} & the ID of the \doxyref{Artist}{p.}{class_artist} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_ab07f3ad7c2ebc2663e77a1663a705fe3}} 
+\index{Artist@{Artist}!````~Artist@{$\sim$\+Artist}}
+\index{````~Artist@{$\sim$\+Artist}!Artist@{Artist}}
+\subsubsection{$\sim$\+Artist()}
+{\footnotesize\ttfamily Artist\+::$\sim$\+Artist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+Definition at line 26 of file Artist.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_artist_ab540e33cd89be910d337f252805bc57d}} 
+\index{Artist@{Artist}!add\+Artwork@{add\+Artwork}}
+\index{add\+Artwork@{add\+Artwork}!Artist@{Artist}}
+\subsubsection{add\+Artwork()}
+{\footnotesize\ttfamily void Artist\+::add\+Artwork (\begin{DoxyParamCaption}\item[{int}]{artwork\+ID,  }\item[{\textbf{ Artwork} $\ast$}]{artwork }\end{DoxyParamCaption})}
+
+Adds a new \doxyref{Artwork}{p.}{class_artwork} object in the list of \doxyref{Artwork}{p.}{class_artwork} objects of the artist. 
+\begin{DoxyParams}{Parameters}
+{\em artwork\+ID} & the ID of the \doxyref{Artwork}{p.}{class_artwork} object. \\
+\hline
+{\em artwork} & the \doxyref{Artwork}{p.}{class_artwork} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a004975042019f53cefe0d8c94903d845}} 
+\index{Artist@{Artist}!add\+B\+E\+Nrep@{add\+B\+E\+Nrep}}
+\index{add\+B\+E\+Nrep@{add\+B\+E\+Nrep}!Artist@{Artist}}
+\subsubsection{add\+B\+E\+Nrep()}
+{\footnotesize\ttfamily void Artist\+::add\+B\+E\+Nrep (\begin{DoxyParamCaption}\item[{double}]{B\+E\+Nrep }\end{DoxyParamCaption})}
+
+Adds a new benchmark reputation value in the vector of benchmark reputation values. 
+\begin{DoxyParams}{Parameters}
+{\em B\+E\+Nrep} & the benchmark reputation value to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a8e7f7f2c9aa71a5ab6c30363387d1462}} 
+\index{Artist@{Artist}!add\+R\+A\+Mrep@{add\+R\+A\+Mrep}}
+\index{add\+R\+A\+Mrep@{add\+R\+A\+Mrep}!Artist@{Artist}}
+\subsubsection{add\+R\+A\+Mrep()}
+{\footnotesize\ttfamily void Artist\+::add\+R\+A\+Mrep (\begin{DoxyParamCaption}\item[{double}]{R\+A\+Mrep }\end{DoxyParamCaption})}
+
+Adds a new R\+AM reputation value in the vector of R\+AM reputation values. 
+\begin{DoxyParams}{Parameters}
+{\em R\+A\+Mrep} & the R\+AM reputation value to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_ab829e8b608a24fac68f7b578c4414ca1}} 
+\index{Artist@{Artist}!add\+Rating@{add\+Rating}}
+\index{add\+Rating@{add\+Rating}!Artist@{Artist}}
+\subsubsection{add\+Rating()}
+{\footnotesize\ttfamily void Artist\+::add\+Rating (\begin{DoxyParamCaption}\item[{\textbf{ Rating} $\ast$}]{rating }\end{DoxyParamCaption})}
+
+Adds a new \doxyref{Rating}{p.}{class_rating} object (i.\+e., pointer to \doxyref{Rating}{p.}{class_rating} object) to the vector of \doxyref{Rating}{p.}{class_rating} objects (i.\+e., vector of pointers to rating objects). 
+\begin{DoxyParams}{Parameters}
+{\em rating} & the new \doxyref{Rating}{p.}{class_rating} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a7717c5307eb7c3a76695f114202ce1f0}} 
+\index{Artist@{Artist}!artwork\+Exists@{artwork\+Exists}}
+\index{artwork\+Exists@{artwork\+Exists}!Artist@{Artist}}
+\subsubsection{artwork\+Exists()}
+{\footnotesize\ttfamily bool Artist\+::artwork\+Exists (\begin{DoxyParamCaption}\item[{int}]{artwork\+ID }\end{DoxyParamCaption})}
+
+Checks if an \doxyref{Artwork}{p.}{class_artwork} object with specific ID exists in the list of \doxyref{Artwork}{p.}{class_artwork} objects of the \doxyref{Artist}{p.}{class_artist}. 
+\begin{DoxyParams}{Parameters}
+{\em artwork\+ID} & the ID of the \doxyref{Artwork}{p.}{class_artwork} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \doxyref{Artwork}{p.}{class_artwork} object belongs to the \doxyref{Artist}{p.}{class_artist}, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a7fe3ceeb3051139945f18445a420b3c8}} 
+\index{Artist@{Artist}!compute\+Average\+Rating\+Given@{compute\+Average\+Rating\+Given}}
+\index{compute\+Average\+Rating\+Given@{compute\+Average\+Rating\+Given}!Artist@{Artist}}
+\subsubsection{compute\+Average\+Rating\+Given()}
+{\footnotesize\ttfamily void Artist\+::compute\+Average\+Rating\+Given (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Computes the average of all ratings given by the \doxyref{Artist}{p.}{class_artist} for the artworks of other artists. 
+
+Definition at line 132 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a1a5e102b899f7c61ffe4f4f7497ef800}} 
+\index{Artist@{Artist}!compute\+Average\+Rating\+Received@{compute\+Average\+Rating\+Received}}
+\index{compute\+Average\+Rating\+Received@{compute\+Average\+Rating\+Received}!Artist@{Artist}}
+\subsubsection{compute\+Average\+Rating\+Received()}
+{\footnotesize\ttfamily void Artist\+::compute\+Average\+Rating\+Received (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Computes the average of the ratings received for all the artworks of the \doxyref{Artist}{p.}{class_artist}. 
+
+Definition at line 116 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_aa42eb1e5cc2672faebf54d84da83d0f3}} 
+\index{Artist@{Artist}!get\+Artwork@{get\+Artwork}}
+\index{get\+Artwork@{get\+Artwork}!Artist@{Artist}}
+\subsubsection{get\+Artwork()}
+{\footnotesize\ttfamily \textbf{ Artwork} $\ast$ Artist\+::get\+Artwork (\begin{DoxyParamCaption}\item[{int}]{artwork\+ID }\end{DoxyParamCaption})}
+
+Returns an \doxyref{Artwork}{p.}{class_artwork} object from the list of \doxyref{Artwork}{p.}{class_artwork} objects of the \doxyref{Artist}{p.}{class_artist}. 
+\begin{DoxyParams}{Parameters}
+{\em artwork\+ID} & the ID of the \doxyref{Artwork}{p.}{class_artwork} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxyref{Artwork}{p.}{class_artwork} object. 
+\end{DoxyReturn}
+
+
+Definition at line 161 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_acdfcaf619563c7aec743887d19e5e2b1}} 
+\index{Artist@{Artist}!get\+Artworks@{get\+Artworks}}
+\index{get\+Artworks@{get\+Artworks}!Artist@{Artist}}
+\subsubsection{get\+Artworks()}
+{\footnotesize\ttfamily std\+::map$<$ int, \textbf{ Artwork} $\ast$ $>$ $\ast$ Artist\+::get\+Artworks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of \doxyref{Artwork}{p.}{class_artwork} objects of the \doxyref{Artist}{p.}{class_artist}. \begin{DoxyReturn}{Returns}
+the list of \doxyref{Artwork}{p.}{class_artwork} objects of the \doxyref{Artist}{p.}{class_artist}. 
+\end{DoxyReturn}
+
+
+Definition at line 182 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a4719d8f710f647ff68aadcfa35667b3b}} 
+\index{Artist@{Artist}!get\+Average\+Rating\+Given@{get\+Average\+Rating\+Given}}
+\index{get\+Average\+Rating\+Given@{get\+Average\+Rating\+Given}!Artist@{Artist}}
+\subsubsection{get\+Average\+Rating\+Given()}
+{\footnotesize\ttfamily double Artist\+::get\+Average\+Rating\+Given (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the average of all ratings given by the \doxyref{Artist}{p.}{class_artist} for the artworks of other artists. \begin{DoxyReturn}{Returns}
+the average of all ratings given by the \doxyref{Artist}{p.}{class_artist} for the artworks of other artists. 
+\end{DoxyReturn}
+
+
+Definition at line 142 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a43f617e0cbcbed844c0a547d0a9963b0}} 
+\index{Artist@{Artist}!get\+Average\+Rating\+Received@{get\+Average\+Rating\+Received}}
+\index{get\+Average\+Rating\+Received@{get\+Average\+Rating\+Received}!Artist@{Artist}}
+\subsubsection{get\+Average\+Rating\+Received()}
+{\footnotesize\ttfamily double Artist\+::get\+Average\+Rating\+Received (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the average of the ratings received for all the artworks of the \doxyref{Artist}{p.}{class_artist}. \begin{DoxyReturn}{Returns}
+the average of the ratings received for all the artworks of the \doxyref{Artist}{p.}{class_artist}. 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_aa9a5a9b045309af3fca8ea392a59d841}} 
+\index{Artist@{Artist}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Artist@{Artist}}
+\subsubsection{get\+I\+D()}
+{\footnotesize\ttfamily int Artist\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the ID of the \doxyref{Artist}{p.}{class_artist} object. \begin{DoxyReturn}{Returns}
+the ID of the \doxyref{Artist}{p.}{class_artist} object. 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a59a62337cbdcbc5bbcc15104c8454ae0}} 
+\index{Artist@{Artist}!get\+Num\+Of\+Artworks@{get\+Num\+Of\+Artworks}}
+\index{get\+Num\+Of\+Artworks@{get\+Num\+Of\+Artworks}!Artist@{Artist}}
+\subsubsection{get\+Num\+Of\+Artworks()}
+{\footnotesize\ttfamily int Artist\+::get\+Num\+Of\+Artworks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of \doxyref{Artwork}{p.}{class_artwork} objects of the \doxyref{Artist}{p.}{class_artist}. \begin{DoxyReturn}{Returns}
+the number of \doxyref{Artwork}{p.}{class_artwork} objects of the \doxyref{Artist}{p.}{class_artist}. 
+\end{DoxyReturn}
+
+
+Definition at line 187 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_ad1e0736f29928baccf4d317f1124c09a}} 
+\index{Artist@{Artist}!is\+Malicious@{is\+Malicious}}
+\index{is\+Malicious@{is\+Malicious}!Artist@{Artist}}
+\subsubsection{is\+Malicious()}
+{\footnotesize\ttfamily bool Artist\+::is\+Malicious (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the status of \doxyref{Artist}{p.}{class_artist} (i.\+e., malicious, non-\/malicious). \begin{DoxyReturn}{Returns}
+a flag indicating if the \doxyref{Artist}{p.}{class_artist} is malicious or not. 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a50d3fc829022547b5e5975c7f71dde59}} 
+\index{Artist@{Artist}!print\+Artworks\+I\+Ds@{print\+Artworks\+I\+Ds}}
+\index{print\+Artworks\+I\+Ds@{print\+Artworks\+I\+Ds}!Artist@{Artist}}
+\subsubsection{print\+Artworks\+I\+Ds()}
+{\footnotesize\ttfamily void Artist\+::print\+Artworks\+I\+Ds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the I\+Ds of the \doxyref{Artwork}{p.}{class_artwork} objects of the \doxyref{Artist}{p.}{class_artist}. 
+
+Definition at line 173 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a69e9d9cdb77ef36d95c1c0db403e9ca2}} 
+\index{Artist@{Artist}!save\+B\+E\+Nreps@{save\+B\+E\+Nreps}}
+\index{save\+B\+E\+Nreps@{save\+B\+E\+Nreps}!Artist@{Artist}}
+\subsubsection{save\+B\+E\+Nreps()}
+{\footnotesize\ttfamily void Artist\+::save\+B\+E\+Nreps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Saves the vector of benchmark reputation values into a file. 
+
+Definition at line 85 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a5fe5fa83324b2db042e7c0d06a655c9c}} 
+\index{Artist@{Artist}!save\+R\+A\+Mreps@{save\+R\+A\+Mreps}}
+\index{save\+R\+A\+Mreps@{save\+R\+A\+Mreps}!Artist@{Artist}}
+\subsubsection{save\+R\+A\+Mreps()}
+{\footnotesize\ttfamily void Artist\+::save\+R\+A\+Mreps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Saves the vector of R\+AM reputation values into a file. 
+
+Definition at line 69 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_a8875fdf6e8654f0e245ce82b8a403fab}} 
+\index{Artist@{Artist}!set\+ID@{set\+ID}}
+\index{set\+ID@{set\+ID}!Artist@{Artist}}
+\subsubsection{set\+I\+D()}
+{\footnotesize\ttfamily void Artist\+::set\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Sets the ID of the \doxyref{Artist}{p.}{class_artist} object. 
+\begin{DoxyParams}{Parameters}
+{\em id} & the ID of the \doxyref{Artist}{p.}{class_artist} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file Artist.\+cpp.
+
+\mbox{\label{class_artist_ae16b929856149eabaf68e9bff3c5db42}} 
+\index{Artist@{Artist}!set\+Malicious@{set\+Malicious}}
+\index{set\+Malicious@{set\+Malicious}!Artist@{Artist}}
+\subsubsection{set\+Malicious()}
+{\footnotesize\ttfamily void Artist\+::set\+Malicious (\begin{DoxyParamCaption}\item[{bool}]{malicious }\end{DoxyParamCaption})}
+
+Sets the \doxyref{Artist}{p.}{class_artist} as malicious. 
+\begin{DoxyParams}{Parameters}
+{\em malicious} & flag (true) to set \doxyref{Artist}{p.}{class_artist} as malicious. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 101 of file Artist.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Artist.\+h}\item 
+\textbf{ Artist.\+cpp}\end{DoxyCompactItemize}

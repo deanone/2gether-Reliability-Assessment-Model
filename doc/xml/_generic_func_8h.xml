@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_generic_func_8h" kind="file" language="C++">
+    <compoundname>GenericFunc.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="_artist_8cpp" local="yes">Artist.cpp</includedby>
+    <includedby refid="_generic_func_8cpp" local="yes">GenericFunc.cpp</includedby>
+    <incdepgraph>
+      <node id="46">
+        <label>GenericFunc.h</label>
+        <link refid="_generic_func_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="49">
+        <label>Artist.cpp</label>
+        <link refid="_artist_8cpp"/>
+      </node>
+      <node id="50">
+        <label>GenericFunc.cpp</label>
+        <link refid="_generic_func_8cpp"/>
+      </node>
+      <node id="48">
+        <label>GenericFunc.h</label>
+        <link refid="_generic_func_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacegnfnc">gnfnc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GENERIC_FUNC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GENERIC_FUNC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacegnfnc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegnfnc" kindref="compound">gnfnc</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespacegnfnc_1a83d25b352dc66d2317f398c5a3c67f81" kindref="member">getExecutablePath</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespacegnfnc_1adf0284ac1df7768c93180ada79054488" kindref="member">getExecutablePathAndMatchItWithFilename</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fileName);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/><sp/>GENERIC_FUNC_H</highlight></codeline>
+    </programlisting>
+    <location file="GenericFunc.h"/>
+  </compounddef>
+</doxygen>

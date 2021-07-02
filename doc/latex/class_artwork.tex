@@ -1,0 +1,179 @@
+\section{Artwork Class Reference}
+\label{class_artwork}\index{Artwork@{Artwork}}
+
+
+{\ttfamily \#include $<$Artwork.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Artwork} ()
+\item 
+\textbf{ Artwork} (int id, int owner\+Id)
+\item 
+\textbf{ $\sim$\+Artwork} ()
+\item 
+void \textbf{ set\+ID} (int id)
+\item 
+int \textbf{ get\+ID} () const
+\item 
+void \textbf{ set\+Owner\+ID} (int owner\+Id)
+\item 
+int \textbf{ get\+Owner\+ID} () const
+\item 
+void \textbf{ add\+Rating} (\textbf{ Rating} $\ast$rating)
+\item 
+void \textbf{ compute\+Average\+Rating} ()
+\item 
+double \textbf{ get\+Average\+Rating} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file Artwork.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_artwork_a0e6fd168fac252783fef0b40c9cc9223}} 
+\index{Artwork@{Artwork}!Artwork@{Artwork}}
+\index{Artwork@{Artwork}!Artwork@{Artwork}}
+\subsubsection{Artwork()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Artwork\+::\+Artwork (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. 
+
+Definition at line 5 of file Artwork.\+cpp.
+
+\mbox{\label{class_artwork_a9f67007c46a2360a9f8144ab42554797}} 
+\index{Artwork@{Artwork}!Artwork@{Artwork}}
+\index{Artwork@{Artwork}!Artwork@{Artwork}}
+\subsubsection{Artwork()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Artwork\+::\+Artwork (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{owner\+Id }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em id} & the ID of the \doxyref{Artwork}{p.}{class_artwork} object. \\
+\hline
+{\em owner\+Id} & the ID of the \doxyref{Artist}{p.}{class_artist} who owns the \doxyref{Artwork}{p.}{class_artwork} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file Artwork.\+cpp.
+
+\mbox{\label{class_artwork_aad66d523ddb57d86e9a10bee7cc397d7}} 
+\index{Artwork@{Artwork}!````~Artwork@{$\sim$\+Artwork}}
+\index{````~Artwork@{$\sim$\+Artwork}!Artwork@{Artwork}}
+\subsubsection{$\sim$\+Artwork()}
+{\footnotesize\ttfamily Artwork\+::$\sim$\+Artwork (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+Definition at line 19 of file Artwork.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_artwork_aa96657efc7c1a654c7f0f69f11d40771}} 
+\index{Artwork@{Artwork}!add\+Rating@{add\+Rating}}
+\index{add\+Rating@{add\+Rating}!Artwork@{Artwork}}
+\subsubsection{add\+Rating()}
+{\footnotesize\ttfamily void Artwork\+::add\+Rating (\begin{DoxyParamCaption}\item[{\textbf{ Rating} $\ast$}]{rating }\end{DoxyParamCaption})}
+
+Adds a new \doxyref{Rating}{p.}{class_rating} object (i.\+e., pointer to \doxyref{Rating}{p.}{class_rating} object) to the vector of \doxyref{Rating}{p.}{class_rating} objects (i.\+e., vector of pointers to rating objects). 
+\begin{DoxyParams}{Parameters}
+{\em rating} & the new \doxyref{Rating}{p.}{class_rating} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file Artwork.\+cpp.
+
+\mbox{\label{class_artwork_ac95ebe275252e460cdee38f16017215a}} 
+\index{Artwork@{Artwork}!compute\+Average\+Rating@{compute\+Average\+Rating}}
+\index{compute\+Average\+Rating@{compute\+Average\+Rating}!Artwork@{Artwork}}
+\subsubsection{compute\+Average\+Rating()}
+{\footnotesize\ttfamily void Artwork\+::compute\+Average\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Computes the average of all ratings received for the \doxyref{Artwork}{p.}{class_artwork} object from other artists of the platform. 
+
+Definition at line 56 of file Artwork.\+cpp.
+
+\mbox{\label{class_artwork_a130665ecc1b25d4260f1c46278f8e0c2}} 
+\index{Artwork@{Artwork}!get\+Average\+Rating@{get\+Average\+Rating}}
+\index{get\+Average\+Rating@{get\+Average\+Rating}!Artwork@{Artwork}}
+\subsubsection{get\+Average\+Rating()}
+{\footnotesize\ttfamily double Artwork\+::get\+Average\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the average of all ratings received for the \doxyref{Artwork}{p.}{class_artwork} object from other artists of the platform. \begin{DoxyReturn}{Returns}
+the average of all ratings received for the \doxyref{Artwork}{p.}{class_artwork} object from other artists of the platform. 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Artwork.\+cpp.
+
+\mbox{\label{class_artwork_adbdfaf7802f0d32e8f6b7335eda10cee}} 
+\index{Artwork@{Artwork}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Artwork@{Artwork}}
+\subsubsection{get\+I\+D()}
+{\footnotesize\ttfamily int Artwork\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the ID of the \doxyref{Artwork}{p.}{class_artwork} object. \begin{DoxyReturn}{Returns}
+the ID of the \doxyref{Artwork}{p.}{class_artwork} object. 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file Artwork.\+cpp.
+
+\mbox{\label{class_artwork_a5a17464fd1a62fc384dbe2614f9ded46}} 
+\index{Artwork@{Artwork}!get\+Owner\+ID@{get\+Owner\+ID}}
+\index{get\+Owner\+ID@{get\+Owner\+ID}!Artwork@{Artwork}}
+\subsubsection{get\+Owner\+I\+D()}
+{\footnotesize\ttfamily int Artwork\+::get\+Owner\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the ID of the \doxyref{Artist}{p.}{class_artist} who owns the \doxyref{Artwork}{p.}{class_artwork} object. \begin{DoxyReturn}{Returns}
+the ID of the \doxyref{Artist}{p.}{class_artist} who owns the \doxyref{Artwork}{p.}{class_artwork} object. 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file Artwork.\+cpp.
+
+\mbox{\label{class_artwork_a29405aeb0036f0d378c7b5e7ca18f61b}} 
+\index{Artwork@{Artwork}!set\+ID@{set\+ID}}
+\index{set\+ID@{set\+ID}!Artwork@{Artwork}}
+\subsubsection{set\+I\+D()}
+{\footnotesize\ttfamily void Artwork\+::set\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Sets the ID of the \doxyref{Artwork}{p.}{class_artwork} object. 
+\begin{DoxyParams}{Parameters}
+{\em id} & the ID of the \doxyref{Artwork}{p.}{class_artwork} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Artwork.\+cpp.
+
+\mbox{\label{class_artwork_a70d6b7f0aa6fe4f8f0ee6d687b01c3fe}} 
+\index{Artwork@{Artwork}!set\+Owner\+ID@{set\+Owner\+ID}}
+\index{set\+Owner\+ID@{set\+Owner\+ID}!Artwork@{Artwork}}
+\subsubsection{set\+Owner\+I\+D()}
+{\footnotesize\ttfamily void Artwork\+::set\+Owner\+ID (\begin{DoxyParamCaption}\item[{int}]{owner\+Id }\end{DoxyParamCaption})}
+
+Sets the ID of the \doxyref{Artist}{p.}{class_artist} who owns the \doxyref{Artwork}{p.}{class_artwork} object. 
+\begin{DoxyParams}{Parameters}
+{\em id} & the ID of the \doxyref{Artist}{p.}{class_artist} who owns the \doxyref{Artwork}{p.}{class_artwork} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Artwork.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Artwork.\+h}\item 
+\textbf{ Artwork.\+cpp}\end{DoxyCompactItemize}

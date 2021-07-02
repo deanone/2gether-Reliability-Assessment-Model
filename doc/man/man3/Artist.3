@@ -1,0 +1,296 @@
+.TH "Artist" 3 "Thu Jul 1 2021" "Version v1.0" "2gether - Reliability Assessment Model (RAM)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Artist
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Artist\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBArtist\fP ()"
+.br
+.ti -1c
+.RI "\fBArtist\fP (int id)"
+.br
+.ti -1c
+.RI "\fB~Artist\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetID\fP (int id)"
+.br
+.ti -1c
+.RI "int \fBgetID\fP () const"
+.br
+.ti -1c
+.RI "void \fBaddRAMrep\fP (double RAMrep)"
+.br
+.ti -1c
+.RI "void \fBaddBENrep\fP (double BENrep)"
+.br
+.ti -1c
+.RI "void \fBsaveRAMreps\fP ()"
+.br
+.ti -1c
+.RI "void \fBsaveBENreps\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMalicious\fP (bool malicious)"
+.br
+.ti -1c
+.RI "bool \fBisMalicious\fP () const"
+.br
+.ti -1c
+.RI "void \fBaddRating\fP (\fBRating\fP *rating)"
+.br
+.ti -1c
+.RI "void \fBcomputeAverageRatingReceived\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetAverageRatingReceived\fP () const"
+.br
+.ti -1c
+.RI "void \fBcomputeAverageRatingGiven\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetAverageRatingGiven\fP () const"
+.br
+.ti -1c
+.RI "void \fBaddArtwork\fP (int artworkID, \fBArtwork\fP *artwork)"
+.br
+.ti -1c
+.RI "\fBArtwork\fP * \fBgetArtwork\fP (int artworkID)"
+.br
+.ti -1c
+.RI "std::map< int, \fBArtwork\fP * > * \fBgetArtworks\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetNumOfArtworks\fP ()"
+.br
+.ti -1c
+.RI "bool \fBartworkExists\fP (int artworkID)"
+.br
+.ti -1c
+.RI "void \fBprintArtworksIDs\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 9 of file Artist\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Artist::Artist ()"
+Default constructor\&. 
+.PP
+Definition at line 10 of file Artist\&.cpp\&.
+.SS "Artist::Artist (int id)"
+Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP the ID of the \fBArtist\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 18 of file Artist\&.cpp\&.
+.SS "Artist::~Artist ()"
+Destructor\&. 
+.PP
+Definition at line 26 of file Artist\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Artist::addArtwork (int artworkID, \fBArtwork\fP * artwork)"
+Adds a new \fBArtwork\fP object in the list of \fBArtwork\fP objects of the artist\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIartworkID\fP the ID of the \fBArtwork\fP object\&. 
+.br
+\fIartwork\fP the \fBArtwork\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 153 of file Artist\&.cpp\&.
+.SS "void Artist::addBENrep (double BENrep)"
+Adds a new benchmark reputation value in the vector of benchmark reputation values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIBENrep\fP the benchmark reputation value to be added\&. 
+.RE
+.PP
+
+.PP
+Definition at line 64 of file Artist\&.cpp\&.
+.SS "void Artist::addRAMrep (double RAMrep)"
+Adds a new RAM reputation value in the vector of RAM reputation values\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRAMrep\fP the RAM reputation value to be added\&. 
+.RE
+.PP
+
+.PP
+Definition at line 59 of file Artist\&.cpp\&.
+.SS "void Artist::addRating (\fBRating\fP * rating)"
+Adds a new \fBRating\fP object (i\&.e\&., pointer to \fBRating\fP object) to the vector of \fBRating\fP objects (i\&.e\&., vector of pointers to rating objects)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrating\fP the new \fBRating\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 111 of file Artist\&.cpp\&.
+.SS "bool Artist::artworkExists (int artworkID)"
+Checks if an \fBArtwork\fP object with specific ID exists in the list of \fBArtwork\fP objects of the \fBArtist\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIartworkID\fP the ID of the \fBArtwork\fP object\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if the \fBArtwork\fP object belongs to the \fBArtist\fP, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Definition at line 147 of file Artist\&.cpp\&.
+.SS "void Artist::computeAverageRatingGiven ()"
+Computes the average of all ratings given by the \fBArtist\fP for the artworks of other artists\&. 
+.PP
+Definition at line 132 of file Artist\&.cpp\&.
+.SS "void Artist::computeAverageRatingReceived ()"
+Computes the average of the ratings received for all the artworks of the \fBArtist\fP\&. 
+.PP
+Definition at line 116 of file Artist\&.cpp\&.
+.SS "\fBArtwork\fP * Artist::getArtwork (int artworkID)"
+Returns an \fBArtwork\fP object from the list of \fBArtwork\fP objects of the \fBArtist\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIartworkID\fP the ID of the \fBArtwork\fP object\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the \fBArtwork\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 161 of file Artist\&.cpp\&.
+.SS "std::map< int, \fBArtwork\fP * > * Artist::getArtworks ()"
+Returns the list of \fBArtwork\fP objects of the \fBArtist\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the list of \fBArtwork\fP objects of the \fBArtist\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 182 of file Artist\&.cpp\&.
+.SS "double Artist::getAverageRatingGiven () const"
+Returns the average of all ratings given by the \fBArtist\fP for the artworks of other artists\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the average of all ratings given by the \fBArtist\fP for the artworks of other artists\&. 
+.RE
+.PP
+
+.PP
+Definition at line 142 of file Artist\&.cpp\&.
+.SS "double Artist::getAverageRatingReceived () const"
+Returns the average of the ratings received for all the artworks of the \fBArtist\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the average of the ratings received for all the artworks of the \fBArtist\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 127 of file Artist\&.cpp\&.
+.SS "int Artist::getID () const"
+Returns the ID of the \fBArtist\fP object\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the ID of the \fBArtist\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 54 of file Artist\&.cpp\&.
+.SS "int Artist::getNumOfArtworks ()"
+Returns the number of \fBArtwork\fP objects of the \fBArtist\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the number of \fBArtwork\fP objects of the \fBArtist\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 187 of file Artist\&.cpp\&.
+.SS "bool Artist::isMalicious () const"
+Returns the status of \fBArtist\fP (i\&.e\&., malicious, non-malicious)\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+a flag indicating if the \fBArtist\fP is malicious or not\&. 
+.RE
+.PP
+
+.PP
+Definition at line 106 of file Artist\&.cpp\&.
+.SS "void Artist::printArtworksIDs ()"
+Prints the IDs of the \fBArtwork\fP objects of the \fBArtist\fP\&. 
+.PP
+Definition at line 173 of file Artist\&.cpp\&.
+.SS "void Artist::saveBENreps ()"
+Saves the vector of benchmark reputation values into a file\&. 
+.PP
+Definition at line 85 of file Artist\&.cpp\&.
+.SS "void Artist::saveRAMreps ()"
+Saves the vector of RAM reputation values into a file\&. 
+.PP
+Definition at line 69 of file Artist\&.cpp\&.
+.SS "void Artist::setID (int id)"
+Sets the ID of the \fBArtist\fP object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP the ID of the \fBArtist\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 49 of file Artist\&.cpp\&.
+.SS "void Artist::setMalicious (bool malicious)"
+Sets the \fBArtist\fP as malicious\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImalicious\fP flag (true) to set \fBArtist\fP as malicious\&. 
+.RE
+.PP
+
+.PP
+Definition at line 101 of file Artist\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 2gether - Reliability Assessment Model (RAM) from the source code\&.

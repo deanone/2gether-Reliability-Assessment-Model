@@ -1,0 +1,141 @@
+.TH "Rating" 3 "Thu Jul 1 2021" "Version v1.0" "2gether - Reliability Assessment Model (RAM)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Rating
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Rating\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRating\fP ()"
+.br
+.ti -1c
+.RI "\fBRating\fP (int fromArtist, int forArtwork, int stars)"
+.br
+.ti -1c
+.RI "\fB~Rating\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFromArtist\fP (int fromArtist)"
+.br
+.ti -1c
+.RI "int \fBgetFromArtist\fP () const"
+.br
+.ti -1c
+.RI "void \fBsetForArtwork\fP (int forArtwork)"
+.br
+.ti -1c
+.RI "int \fBgetForArtwork\fP () const"
+.br
+.ti -1c
+.RI "void \fBsetStars\fP (int stars)"
+.br
+.ti -1c
+.RI "int \fBgetStars\fP () const"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 4 of file Rating\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Rating::Rating ()"
+Default constructor\&. 
+.PP
+Definition at line 3 of file Rating\&.cpp\&.
+.SS "Rating::Rating (int fromArtist, int forArtwork, int stars)"
+Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfromArtist\fP the id of the \fBArtist\fP object that made the \fBRating\fP\&. 
+.br
+\fIforArtwork\fP the id of the \fBArtwork\fP object that received the \fBRating\fP\&. 
+.br
+\fIstars\fP the actual rating value (integer in [1, 5])\&. 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file Rating\&.cpp\&.
+.SS "Rating::~Rating ()"
+Destructor\&. 
+.PP
+Definition at line 17 of file Rating\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int Rating::getForArtwork () const"
+Returns the ID of the \fBArtwork\fP object that received the \fBRating\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the ID of the \fBArtwork\fP object that received the \fBRating\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file Rating\&.cpp\&.
+.SS "int Rating::getFromArtist () const"
+Returns the ID of the \fBArtist\fP object that made the \fBRating\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the ID of the \fBArtist\fP object that made the \fBRating\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 26 of file Rating\&.cpp\&.
+.SS "int Rating::getStars () const"
+Returns the actual rating value (integer in [1, 5])\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the actual rating value (integer in [1, 5])\&. 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file Rating\&.cpp\&.
+.SS "void Rating::setForArtwork (int forArtwork)"
+Sets the ID of the \fBArtwork\fP object that received the \fBRating\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP the ID of the \fBArtwork\fP object that received the \fBRating\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 31 of file Rating\&.cpp\&.
+.SS "void Rating::setFromArtist (int fromArtist)"
+Sets the ID of the \fBArtist\fP object that made the \fBRating\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP the ID of the \fBArtist\fP object that made the \fBRating\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 21 of file Rating\&.cpp\&.
+.SS "void Rating::setStars (int stars)"
+Sets the actual rating value (integer in [1, 5])\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstars\fP the actual rating value (integer in [1, 5])\&. 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file Rating\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 2gether - Reliability Assessment Model (RAM) from the source code\&.

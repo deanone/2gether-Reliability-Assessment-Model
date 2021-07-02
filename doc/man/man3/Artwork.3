@@ -1,0 +1,146 @@
+.TH "Artwork" 3 "Thu Jul 1 2021" "Version v1.0" "2gether - Reliability Assessment Model (RAM)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Artwork
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Artwork\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBArtwork\fP ()"
+.br
+.ti -1c
+.RI "\fBArtwork\fP (int id, int ownerId)"
+.br
+.ti -1c
+.RI "\fB~Artwork\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetID\fP (int id)"
+.br
+.ti -1c
+.RI "int \fBgetID\fP () const"
+.br
+.ti -1c
+.RI "void \fBsetOwnerID\fP (int ownerId)"
+.br
+.ti -1c
+.RI "int \fBgetOwnerID\fP () const"
+.br
+.ti -1c
+.RI "void \fBaddRating\fP (\fBRating\fP *rating)"
+.br
+.ti -1c
+.RI "void \fBcomputeAverageRating\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetAverageRating\fP () const"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 8 of file Artwork\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Artwork::Artwork ()"
+Default constructor\&. 
+.PP
+Definition at line 5 of file Artwork\&.cpp\&.
+.SS "Artwork::Artwork (int id, int ownerId)"
+Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP the ID of the \fBArtwork\fP object\&. 
+.br
+\fIownerId\fP the ID of the \fBArtist\fP who owns the \fBArtwork\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file Artwork\&.cpp\&.
+.SS "Artwork::~Artwork ()"
+Destructor\&. 
+.PP
+Definition at line 19 of file Artwork\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Artwork::addRating (\fBRating\fP * rating)"
+Adds a new \fBRating\fP object (i\&.e\&., pointer to \fBRating\fP object) to the vector of \fBRating\fP objects (i\&.e\&., vector of pointers to rating objects)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrating\fP the new \fBRating\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 51 of file Artwork\&.cpp\&.
+.SS "void Artwork::computeAverageRating ()"
+Computes the average of all ratings received for the \fBArtwork\fP object from other artists of the platform\&. 
+.PP
+Definition at line 56 of file Artwork\&.cpp\&.
+.SS "double Artwork::getAverageRating () const"
+Returns the average of all ratings received for the \fBArtwork\fP object from other artists of the platform\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the average of all ratings received for the \fBArtwork\fP object from other artists of the platform\&. 
+.RE
+.PP
+
+.PP
+Definition at line 66 of file Artwork\&.cpp\&.
+.SS "int Artwork::getID () const"
+Returns the ID of the \fBArtwork\fP object\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the ID of the \fBArtwork\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file Artwork\&.cpp\&.
+.SS "int Artwork::getOwnerID () const"
+Returns the ID of the \fBArtist\fP who owns the \fBArtwork\fP object\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the ID of the \fBArtist\fP who owns the \fBArtwork\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file Artwork\&.cpp\&.
+.SS "void Artwork::setID (int id)"
+Sets the ID of the \fBArtwork\fP object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP the ID of the \fBArtwork\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 31 of file Artwork\&.cpp\&.
+.SS "void Artwork::setOwnerID (int ownerId)"
+Sets the ID of the \fBArtist\fP who owns the \fBArtwork\fP object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP the ID of the \fBArtist\fP who owns the \fBArtwork\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file Artwork\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 2gether - Reliability Assessment Model (RAM) from the source code\&.

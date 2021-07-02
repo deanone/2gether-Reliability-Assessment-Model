@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_rating_8h" kind="file" language="C++">
+    <compoundname>Rating.h</compoundname>
+    <includedby refid="_artwork_8h" local="yes">Artwork.h</includedby>
+    <includedby refid="_artist_8h" local="yes">Artist.h</includedby>
+    <includedby refid="_rating_8cpp" local="yes">Rating.cpp</includedby>
+    <invincdepgraph>
+      <node id="73">
+        <label>Artist.cpp</label>
+        <link refid="_artist_8cpp"/>
+      </node>
+      <node id="74">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="75">
+        <label>Artwork.cpp</label>
+        <link refid="_artwork_8cpp"/>
+      </node>
+      <node id="76">
+        <label>Rating.cpp</label>
+        <link refid="_rating_8cpp"/>
+      </node>
+      <node id="70">
+        <label>Rating.h</label>
+        <link refid="_rating_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>Artist.h</label>
+        <link refid="_artist_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Artwork.h</label>
+        <link refid="_artwork_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_rating" prot="public">Rating</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>RATING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RATING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_rating" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_rating" kindref="compound">Rating</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fromArtist;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>forArtwork;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stars;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rating_1aa02926f7a5545722ac6445c3218bf155" kindref="member">Rating</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rating_1aa02926f7a5545722ac6445c3218bf155" kindref="member">Rating</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fromArtist,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>forArtwork,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stars);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rating_1a6b1fecfba1e3e9285bad7c9006107b56" kindref="member">~Rating</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rating_1a2af223d841136dddc93766e83d666539" kindref="member">setFromArtist</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fromArtist);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_rating_1a3ead6a037799025d7d0be750087eca6a" kindref="member">getFromArtist</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rating_1a4f9dd5689d187e6ba3be69fc295bccd0" kindref="member">setForArtwork</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>forArtwork);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_rating_1a82fd8776b746ba7417d3630b742d5bc7" kindref="member">getForArtwork</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rating_1a9747bc949a6427fc2a99ea7aa044fb20" kindref="member">setStars</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stars);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_rating_1a408f5065b17765e19f292fb9041ed192" kindref="member">getStars</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/><sp/>RATING_H</highlight></codeline>
+    </programlisting>
+    <location file="Rating.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_artist" kind="class"><name>Artist</name>
+    <member refid="class_artist_1a63eb02a823d826d65c37596fc1801cdd" kind="variable"><name>id</name></member>
+    <member refid="class_artist_1a97850b906d79265bebe76b6b59a20a39" kind="variable"><name>artworks</name></member>
+    <member refid="class_artist_1adeaac707d40a67e9a41c39345fd37169" kind="variable"><name>ratings</name></member>
+    <member refid="class_artist_1ab3bf2bc62b9c6f6ac220b99205cad7ad" kind="variable"><name>malicious</name></member>
+    <member refid="class_artist_1a807c2b7a064fd7e2609b2ab68fd5c6f0" kind="variable"><name>averageRatingReceived</name></member>
+    <member refid="class_artist_1aaaa5c0b1eaae257a12352a7c54f81678" kind="variable"><name>averageRatingGiven</name></member>
+    <member refid="class_artist_1a203df1e1d89f7a95b138bfd2ead25b54" kind="variable"><name>RAMreps</name></member>
+    <member refid="class_artist_1aa088dfd1e37f59f14660d232832d6c97" kind="variable"><name>BENreps</name></member>
+    <member refid="class_artist_1ad49ef7a2d2847076e737a2836e8915ab" kind="function"><name>Artist</name></member>
+    <member refid="class_artist_1a486d55ca54ff3a9df584889466c7cc44" kind="function"><name>Artist</name></member>
+    <member refid="class_artist_1ab07f3ad7c2ebc2663e77a1663a705fe3" kind="function"><name>~Artist</name></member>
+    <member refid="class_artist_1a8875fdf6e8654f0e245ce82b8a403fab" kind="function"><name>setID</name></member>
+    <member refid="class_artist_1aa9a5a9b045309af3fca8ea392a59d841" kind="function"><name>getID</name></member>
+    <member refid="class_artist_1a8e7f7f2c9aa71a5ab6c30363387d1462" kind="function"><name>addRAMrep</name></member>
+    <member refid="class_artist_1a004975042019f53cefe0d8c94903d845" kind="function"><name>addBENrep</name></member>
+    <member refid="class_artist_1a5fe5fa83324b2db042e7c0d06a655c9c" kind="function"><name>saveRAMreps</name></member>
+    <member refid="class_artist_1a69e9d9cdb77ef36d95c1c0db403e9ca2" kind="function"><name>saveBENreps</name></member>
+    <member refid="class_artist_1ae16b929856149eabaf68e9bff3c5db42" kind="function"><name>setMalicious</name></member>
+    <member refid="class_artist_1ad1e0736f29928baccf4d317f1124c09a" kind="function"><name>isMalicious</name></member>
+    <member refid="class_artist_1ab829e8b608a24fac68f7b578c4414ca1" kind="function"><name>addRating</name></member>
+    <member refid="class_artist_1a1a5e102b899f7c61ffe4f4f7497ef800" kind="function"><name>computeAverageRatingReceived</name></member>
+    <member refid="class_artist_1a43f617e0cbcbed844c0a547d0a9963b0" kind="function"><name>getAverageRatingReceived</name></member>
+    <member refid="class_artist_1a7fe3ceeb3051139945f18445a420b3c8" kind="function"><name>computeAverageRatingGiven</name></member>
+    <member refid="class_artist_1a4719d8f710f647ff68aadcfa35667b3b" kind="function"><name>getAverageRatingGiven</name></member>
+    <member refid="class_artist_1ab540e33cd89be910d337f252805bc57d" kind="function"><name>addArtwork</name></member>
+    <member refid="class_artist_1aa42eb1e5cc2672faebf54d84da83d0f3" kind="function"><name>getArtwork</name></member>
+    <member refid="class_artist_1acdfcaf619563c7aec743887d19e5e2b1" kind="function"><name>getArtworks</name></member>
+    <member refid="class_artist_1a59a62337cbdcbc5bbcc15104c8454ae0" kind="function"><name>getNumOfArtworks</name></member>
+    <member refid="class_artist_1a7717c5307eb7c3a76695f114202ce1f0" kind="function"><name>artworkExists</name></member>
+    <member refid="class_artist_1a50d3fc829022547b5e5975c7f71dde59" kind="function"><name>printArtworksIDs</name></member>
+  </compound>
+  <compound refid="class_artwork" kind="class"><name>Artwork</name>
+    <member refid="class_artwork_1ac7dfb98e80011af7b5988d8199d1c3aa" kind="variable"><name>id</name></member>
+    <member refid="class_artwork_1a0d6b41da1b4d5798387dfb43a008b322" kind="variable"><name>ownerId</name></member>
+    <member refid="class_artwork_1a4031e1c700d43edb418873962682d0c4" kind="variable"><name>ratings</name></member>
+    <member refid="class_artwork_1ac63776ce31bbe3c6f0377a25dac80eff" kind="variable"><name>averageRating</name></member>
+    <member refid="class_artwork_1a0e6fd168fac252783fef0b40c9cc9223" kind="function"><name>Artwork</name></member>
+    <member refid="class_artwork_1a9f67007c46a2360a9f8144ab42554797" kind="function"><name>Artwork</name></member>
+    <member refid="class_artwork_1aad66d523ddb57d86e9a10bee7cc397d7" kind="function"><name>~Artwork</name></member>
+    <member refid="class_artwork_1a29405aeb0036f0d378c7b5e7ca18f61b" kind="function"><name>setID</name></member>
+    <member refid="class_artwork_1adbdfaf7802f0d32e8f6b7335eda10cee" kind="function"><name>getID</name></member>
+    <member refid="class_artwork_1a70d6b7f0aa6fe4f8f0ee6d687b01c3fe" kind="function"><name>setOwnerID</name></member>
+    <member refid="class_artwork_1a5a17464fd1a62fc384dbe2614f9ded46" kind="function"><name>getOwnerID</name></member>
+    <member refid="class_artwork_1aa96657efc7c1a654c7f0f69f11d40771" kind="function"><name>addRating</name></member>
+    <member refid="class_artwork_1ac95ebe275252e460cdee38f16017215a" kind="function"><name>computeAverageRating</name></member>
+    <member refid="class_artwork_1a130665ecc1b25d4260f1c46278f8e0c2" kind="function"><name>getAverageRating</name></member>
+  </compound>
+  <compound refid="class_rating" kind="class"><name>Rating</name>
+    <member refid="class_rating_1a4625f570e3eaed7f97efc1ff33be9558" kind="variable"><name>fromArtist</name></member>
+    <member refid="class_rating_1aa3433923cb2605bdf14b181ecce595b2" kind="variable"><name>forArtwork</name></member>
+    <member refid="class_rating_1ac737f530793613cb0ef3d89aa938f7d4" kind="variable"><name>stars</name></member>
+    <member refid="class_rating_1aa02926f7a5545722ac6445c3218bf155" kind="function"><name>Rating</name></member>
+    <member refid="class_rating_1a5dfa184b1ea57b6fa83f62c92ac2e478" kind="function"><name>Rating</name></member>
+    <member refid="class_rating_1a6b1fecfba1e3e9285bad7c9006107b56" kind="function"><name>~Rating</name></member>
+    <member refid="class_rating_1a2af223d841136dddc93766e83d666539" kind="function"><name>setFromArtist</name></member>
+    <member refid="class_rating_1a3ead6a037799025d7d0be750087eca6a" kind="function"><name>getFromArtist</name></member>
+    <member refid="class_rating_1a4f9dd5689d187e6ba3be69fc295bccd0" kind="function"><name>setForArtwork</name></member>
+    <member refid="class_rating_1a82fd8776b746ba7417d3630b742d5bc7" kind="function"><name>getForArtwork</name></member>
+    <member refid="class_rating_1a9747bc949a6427fc2a99ea7aa044fb20" kind="function"><name>setStars</name></member>
+    <member refid="class_rating_1a408f5065b17765e19f292fb9041ed192" kind="function"><name>getStars</name></member>
+  </compound>
+  <compound refid="namespacegnfnc" kind="namespace"><name>gnfnc</name>
+    <member refid="namespacegnfnc_1a83d25b352dc66d2317f398c5a3c67f81" kind="function"><name>getExecutablePath</name></member>
+    <member refid="namespacegnfnc_1adf0284ac1df7768c93180ada79054488" kind="function"><name>getExecutablePathAndMatchItWithFilename</name></member>
+  </compound>
+  <compound refid="_artist_8cpp" kind="file"><name>Artist.cpp</name>
+  </compound>
+  <compound refid="_artist_8h" kind="file"><name>Artist.h</name>
+  </compound>
+  <compound refid="_artwork_8cpp" kind="file"><name>Artwork.cpp</name>
+  </compound>
+  <compound refid="_artwork_8h" kind="file"><name>Artwork.h</name>
+  </compound>
+  <compound refid="dirent_8h" kind="file"><name>dirent.h</name>
+    <member refid="dirent_8h_1a4fa796460f38104052159df94e89d209" kind="define"><name>DIRENT_H_INCLUDED</name></member>
+  </compound>
+  <compound refid="_generic_func_8cpp" kind="file"><name>GenericFunc.cpp</name>
+  </compound>
+  <compound refid="_generic_func_8h" kind="file"><name>GenericFunc.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_rating_8cpp" kind="file"><name>Rating.cpp</name>
+  </compound>
+  <compound refid="_rating_8h" kind="file"><name>Rating.h</name>
+  </compound>
+</doxygenindex>

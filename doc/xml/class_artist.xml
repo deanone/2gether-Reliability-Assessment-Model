@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_artist" kind="class" language="C++" prot="public">
+    <compoundname>Artist</compoundname>
+    <includes refid="_artist_8h" local="no">Artist.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_artist_1a63eb02a823d826d65c37596fc1801cdd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Artist::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The id of the <ref refid="class_artist" kindref="compound">Artist</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="12" column="1" bodyfile="Artist.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_artist_1a97850b906d79265bebe76b6b59a20a39" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, <ref refid="class_artwork" kindref="compound">Artwork</ref> * &gt;</type>
+        <definition>std::map&lt;int, Artwork*&gt; Artist::artworks</definition>
+        <argsstring></argsstring>
+        <name>artworks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The list of artworks of the artist. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="14" column="1" bodyfile="Artist.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_artist_1adeaac707d40a67e9a41c39345fd37169" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_rating" kindref="compound">Rating</ref> * &gt;</type>
+        <definition>std::vector&lt;Rating*&gt; Artist::ratings</definition>
+        <argsstring></argsstring>
+        <name>ratings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The list of rating given by the artist. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="16" column="1" bodyfile="Artist.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_artist_1ab3bf2bc62b9c6f6ac220b99205cad7ad" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Artist::malicious</definition>
+        <argsstring></argsstring>
+        <name>malicious</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A flag indicating if the user is malicious or not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="18" column="1" bodyfile="Artist.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_artist_1a807c2b7a064fd7e2609b2ab68fd5c6f0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Artist::averageRatingReceived</definition>
+        <argsstring></argsstring>
+        <name>averageRatingReceived</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The average of the ratings received for all the artworks of the artist. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="20" column="1" bodyfile="Artist.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_artist_1aaaa5c0b1eaae257a12352a7c54f81678" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Artist::averageRatingGiven</definition>
+        <argsstring></argsstring>
+        <name>averageRatingGiven</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the average of all ratings given by the artist for the artworks of other artists </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="22" column="1" bodyfile="Artist.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_artist_1a203df1e1d89f7a95b138bfd2ead25b54" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Artist::RAMreps</definition>
+        <argsstring></argsstring>
+        <name>RAMreps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the vector of RAM reputation values. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="24" column="1" bodyfile="Artist.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_artist_1aa088dfd1e37f59f14660d232832d6c97" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Artist::BENreps</definition>
+        <argsstring></argsstring>
+        <name>BENreps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the vector of benchmark reputation values. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="26" column="1" bodyfile="Artist.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_artist_1ad49ef7a2d2847076e737a2836e8915ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Artist::Artist</definition>
+        <argsstring>()</argsstring>
+        <name>Artist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="33" column="1" bodyfile="Artist.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a486d55ca54ff3a9df584889466c7cc44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Artist::Artist</definition>
+        <argsstring>(int id)</argsstring>
+        <name>Artist</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_artist" kindref="compound">Artist</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="39" column="1" bodyfile="Artist.cpp" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1ab07f3ad7c2ebc2663e77a1663a705fe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Artist::~Artist</definition>
+        <argsstring>()</argsstring>
+        <name>~Artist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="44" column="1" bodyfile="Artist.cpp" bodystart="26" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a8875fdf6e8654f0e245ce82b8a403fab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::setID</definition>
+        <argsstring>(int id)</argsstring>
+        <name>setID</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the ID of the <ref refid="class_artist" kindref="compound">Artist</ref> object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_artist" kindref="compound">Artist</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="50" column="1" bodyfile="Artist.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1aa9a5a9b045309af3fca8ea392a59d841" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Artist::getID</definition>
+        <argsstring>() const</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the ID of the <ref refid="class_artist" kindref="compound">Artist</ref> object. <simplesect kind="return"><para>the ID of the <ref refid="class_artist" kindref="compound">Artist</ref> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="56" column="1" bodyfile="Artist.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a8e7f7f2c9aa71a5ab6c30363387d1462" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::addRAMrep</definition>
+        <argsstring>(double RAMrep)</argsstring>
+        <name>addRAMrep</name>
+        <param>
+          <type>double</type>
+          <declname>RAMrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a new RAM reputation value in the vector of RAM reputation values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RAMrep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the RAM reputation value to be added. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="62" column="1" bodyfile="Artist.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a004975042019f53cefe0d8c94903d845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::addBENrep</definition>
+        <argsstring>(double BENrep)</argsstring>
+        <name>addBENrep</name>
+        <param>
+          <type>double</type>
+          <declname>BENrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a new benchmark reputation value in the vector of benchmark reputation values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BENrep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the benchmark reputation value to be added. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="68" column="1" bodyfile="Artist.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a5fe5fa83324b2db042e7c0d06a655c9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::saveRAMreps</definition>
+        <argsstring>()</argsstring>
+        <name>saveRAMreps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saves the vector of RAM reputation values into a file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="73" column="1" bodyfile="Artist.cpp" bodystart="69" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a69e9d9cdb77ef36d95c1c0db403e9ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::saveBENreps</definition>
+        <argsstring>()</argsstring>
+        <name>saveBENreps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saves the vector of benchmark reputation values into a file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="78" column="1" bodyfile="Artist.cpp" bodystart="85" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1ae16b929856149eabaf68e9bff3c5db42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::setMalicious</definition>
+        <argsstring>(bool malicious)</argsstring>
+        <name>setMalicious</name>
+        <param>
+          <type>bool</type>
+          <declname>malicious</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the <ref refid="class_artist" kindref="compound">Artist</ref> as malicious. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>malicious</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag (true) to set <ref refid="class_artist" kindref="compound">Artist</ref> as malicious. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="84" column="1" bodyfile="Artist.cpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1ad1e0736f29928baccf4d317f1124c09a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Artist::isMalicious</definition>
+        <argsstring>() const</argsstring>
+        <name>isMalicious</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the status of <ref refid="class_artist" kindref="compound">Artist</ref> (i.e., malicious, non-malicious). <simplesect kind="return"><para>a flag indicating if the <ref refid="class_artist" kindref="compound">Artist</ref> is malicious or not. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="90" column="1" bodyfile="Artist.cpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1ab829e8b608a24fac68f7b578c4414ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::addRating</definition>
+        <argsstring>(Rating *rating)</argsstring>
+        <name>addRating</name>
+        <param>
+          <type><ref refid="class_rating" kindref="compound">Rating</ref> *</type>
+          <declname>rating</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a new <ref refid="class_rating" kindref="compound">Rating</ref> object (i.e., pointer to <ref refid="class_rating" kindref="compound">Rating</ref> object) to the vector of <ref refid="class_rating" kindref="compound">Rating</ref> objects (i.e., vector of pointers to rating objects). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rating</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new <ref refid="class_rating" kindref="compound">Rating</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="96" column="1" bodyfile="Artist.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a1a5e102b899f7c61ffe4f4f7497ef800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::computeAverageRatingReceived</definition>
+        <argsstring>()</argsstring>
+        <name>computeAverageRatingReceived</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes the average of the ratings received for all the artworks of the <ref refid="class_artist" kindref="compound">Artist</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="101" column="1" bodyfile="Artist.cpp" bodystart="116" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a43f617e0cbcbed844c0a547d0a9963b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Artist::getAverageRatingReceived</definition>
+        <argsstring>() const</argsstring>
+        <name>getAverageRatingReceived</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the average of the ratings received for all the artworks of the <ref refid="class_artist" kindref="compound">Artist</ref>. <simplesect kind="return"><para>the average of the ratings received for all the artworks of the <ref refid="class_artist" kindref="compound">Artist</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="107" column="1" bodyfile="Artist.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a7fe3ceeb3051139945f18445a420b3c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::computeAverageRatingGiven</definition>
+        <argsstring>()</argsstring>
+        <name>computeAverageRatingGiven</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes the average of all ratings given by the <ref refid="class_artist" kindref="compound">Artist</ref> for the artworks of other artists. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="112" column="1" bodyfile="Artist.cpp" bodystart="132" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a4719d8f710f647ff68aadcfa35667b3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Artist::getAverageRatingGiven</definition>
+        <argsstring>() const</argsstring>
+        <name>getAverageRatingGiven</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the average of all ratings given by the <ref refid="class_artist" kindref="compound">Artist</ref> for the artworks of other artists. <simplesect kind="return"><para>the average of all ratings given by the <ref refid="class_artist" kindref="compound">Artist</ref> for the artworks of other artists. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="118" column="1" bodyfile="Artist.cpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1ab540e33cd89be910d337f252805bc57d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::addArtwork</definition>
+        <argsstring>(int artworkID, Artwork *artwork)</argsstring>
+        <name>addArtwork</name>
+        <param>
+          <type>int</type>
+          <declname>artworkID</declname>
+        </param>
+        <param>
+          <type><ref refid="class_artwork" kindref="compound">Artwork</ref> *</type>
+          <declname>artwork</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a new <ref refid="class_artwork" kindref="compound">Artwork</ref> object in the list of <ref refid="class_artwork" kindref="compound">Artwork</ref> objects of the artist. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>artworkID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_artwork" kindref="compound">Artwork</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>artwork</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="class_artwork" kindref="compound">Artwork</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="125" column="1" bodyfile="Artist.cpp" bodystart="153" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1aa42eb1e5cc2672faebf54d84da83d0f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_artwork" kindref="compound">Artwork</ref> *</type>
+        <definition>Artwork * Artist::getArtwork</definition>
+        <argsstring>(int artworkID)</argsstring>
+        <name>getArtwork</name>
+        <param>
+          <type>int</type>
+          <declname>artworkID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an <ref refid="class_artwork" kindref="compound">Artwork</ref> object from the list of <ref refid="class_artwork" kindref="compound">Artwork</ref> objects of the <ref refid="class_artist" kindref="compound">Artist</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>artworkID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_artwork" kindref="compound">Artwork</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the <ref refid="class_artwork" kindref="compound">Artwork</ref> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="132" column="1" bodyfile="Artist.cpp" bodystart="161" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1acdfcaf619563c7aec743887d19e5e2b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; int, <ref refid="class_artwork" kindref="compound">Artwork</ref> * &gt; *</type>
+        <definition>std::map&lt; int, Artwork * &gt; * Artist::getArtworks</definition>
+        <argsstring>()</argsstring>
+        <name>getArtworks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the list of <ref refid="class_artwork" kindref="compound">Artwork</ref> objects of the <ref refid="class_artist" kindref="compound">Artist</ref>. <simplesect kind="return"><para>the list of <ref refid="class_artwork" kindref="compound">Artwork</ref> objects of the <ref refid="class_artist" kindref="compound">Artist</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="138" column="1" bodyfile="Artist.cpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a59a62337cbdcbc5bbcc15104c8454ae0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Artist::getNumOfArtworks</definition>
+        <argsstring>()</argsstring>
+        <name>getNumOfArtworks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of <ref refid="class_artwork" kindref="compound">Artwork</ref> objects of the <ref refid="class_artist" kindref="compound">Artist</ref>. <simplesect kind="return"><para>the number of <ref refid="class_artwork" kindref="compound">Artwork</ref> objects of the <ref refid="class_artist" kindref="compound">Artist</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="144" column="1" bodyfile="Artist.cpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a7717c5307eb7c3a76695f114202ce1f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Artist::artworkExists</definition>
+        <argsstring>(int artworkID)</argsstring>
+        <name>artworkExists</name>
+        <param>
+          <type>int</type>
+          <declname>artworkID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if an <ref refid="class_artwork" kindref="compound">Artwork</ref> object with specific ID exists in the list of <ref refid="class_artwork" kindref="compound">Artwork</ref> objects of the <ref refid="class_artist" kindref="compound">Artist</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>artworkID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_artwork" kindref="compound">Artwork</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the <ref refid="class_artwork" kindref="compound">Artwork</ref> object belongs to the <ref refid="class_artist" kindref="compound">Artist</ref>, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="151" column="1" bodyfile="Artist.cpp" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_artist_1a50d3fc829022547b5e5975c7f71dde59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Artist::printArtworksIDs</definition>
+        <argsstring>()</argsstring>
+        <name>printArtworksIDs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints the IDs of the <ref refid="class_artwork" kindref="compound">Artwork</ref> objects of the <ref refid="class_artist" kindref="compound">Artist</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Artist.h" line="156" column="1" bodyfile="Artist.cpp" bodystart="173" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Artist.h" line="10" column="1" bodyfile="Artist.h" bodystart="9" bodyend="158"/>
+    <listofallmembers>
+      <member refid="class_artist_1ab540e33cd89be910d337f252805bc57d" prot="public" virt="non-virtual"><scope>Artist</scope><name>addArtwork</name></member>
+      <member refid="class_artist_1a004975042019f53cefe0d8c94903d845" prot="public" virt="non-virtual"><scope>Artist</scope><name>addBENrep</name></member>
+      <member refid="class_artist_1a8e7f7f2c9aa71a5ab6c30363387d1462" prot="public" virt="non-virtual"><scope>Artist</scope><name>addRAMrep</name></member>
+      <member refid="class_artist_1ab829e8b608a24fac68f7b578c4414ca1" prot="public" virt="non-virtual"><scope>Artist</scope><name>addRating</name></member>
+      <member refid="class_artist_1ad49ef7a2d2847076e737a2836e8915ab" prot="public" virt="non-virtual"><scope>Artist</scope><name>Artist</name></member>
+      <member refid="class_artist_1a486d55ca54ff3a9df584889466c7cc44" prot="public" virt="non-virtual"><scope>Artist</scope><name>Artist</name></member>
+      <member refid="class_artist_1a7717c5307eb7c3a76695f114202ce1f0" prot="public" virt="non-virtual"><scope>Artist</scope><name>artworkExists</name></member>
+      <member refid="class_artist_1a97850b906d79265bebe76b6b59a20a39" prot="private" virt="non-virtual"><scope>Artist</scope><name>artworks</name></member>
+      <member refid="class_artist_1aaaa5c0b1eaae257a12352a7c54f81678" prot="private" virt="non-virtual"><scope>Artist</scope><name>averageRatingGiven</name></member>
+      <member refid="class_artist_1a807c2b7a064fd7e2609b2ab68fd5c6f0" prot="private" virt="non-virtual"><scope>Artist</scope><name>averageRatingReceived</name></member>
+      <member refid="class_artist_1aa088dfd1e37f59f14660d232832d6c97" prot="private" virt="non-virtual"><scope>Artist</scope><name>BENreps</name></member>
+      <member refid="class_artist_1a7fe3ceeb3051139945f18445a420b3c8" prot="public" virt="non-virtual"><scope>Artist</scope><name>computeAverageRatingGiven</name></member>
+      <member refid="class_artist_1a1a5e102b899f7c61ffe4f4f7497ef800" prot="public" virt="non-virtual"><scope>Artist</scope><name>computeAverageRatingReceived</name></member>
+      <member refid="class_artist_1aa42eb1e5cc2672faebf54d84da83d0f3" prot="public" virt="non-virtual"><scope>Artist</scope><name>getArtwork</name></member>
+      <member refid="class_artist_1acdfcaf619563c7aec743887d19e5e2b1" prot="public" virt="non-virtual"><scope>Artist</scope><name>getArtworks</name></member>
+      <member refid="class_artist_1a4719d8f710f647ff68aadcfa35667b3b" prot="public" virt="non-virtual"><scope>Artist</scope><name>getAverageRatingGiven</name></member>
+      <member refid="class_artist_1a43f617e0cbcbed844c0a547d0a9963b0" prot="public" virt="non-virtual"><scope>Artist</scope><name>getAverageRatingReceived</name></member>
+      <member refid="class_artist_1aa9a5a9b045309af3fca8ea392a59d841" prot="public" virt="non-virtual"><scope>Artist</scope><name>getID</name></member>
+      <member refid="class_artist_1a59a62337cbdcbc5bbcc15104c8454ae0" prot="public" virt="non-virtual"><scope>Artist</scope><name>getNumOfArtworks</name></member>
+      <member refid="class_artist_1a63eb02a823d826d65c37596fc1801cdd" prot="private" virt="non-virtual"><scope>Artist</scope><name>id</name></member>
+      <member refid="class_artist_1ad1e0736f29928baccf4d317f1124c09a" prot="public" virt="non-virtual"><scope>Artist</scope><name>isMalicious</name></member>
+      <member refid="class_artist_1ab3bf2bc62b9c6f6ac220b99205cad7ad" prot="private" virt="non-virtual"><scope>Artist</scope><name>malicious</name></member>
+      <member refid="class_artist_1a50d3fc829022547b5e5975c7f71dde59" prot="public" virt="non-virtual"><scope>Artist</scope><name>printArtworksIDs</name></member>
+      <member refid="class_artist_1a203df1e1d89f7a95b138bfd2ead25b54" prot="private" virt="non-virtual"><scope>Artist</scope><name>RAMreps</name></member>
+      <member refid="class_artist_1adeaac707d40a67e9a41c39345fd37169" prot="private" virt="non-virtual"><scope>Artist</scope><name>ratings</name></member>
+      <member refid="class_artist_1a69e9d9cdb77ef36d95c1c0db403e9ca2" prot="public" virt="non-virtual"><scope>Artist</scope><name>saveBENreps</name></member>
+      <member refid="class_artist_1a5fe5fa83324b2db042e7c0d06a655c9c" prot="public" virt="non-virtual"><scope>Artist</scope><name>saveRAMreps</name></member>
+      <member refid="class_artist_1a8875fdf6e8654f0e245ce82b8a403fab" prot="public" virt="non-virtual"><scope>Artist</scope><name>setID</name></member>
+      <member refid="class_artist_1ae16b929856149eabaf68e9bff3c5db42" prot="public" virt="non-virtual"><scope>Artist</scope><name>setMalicious</name></member>
+      <member refid="class_artist_1ab07f3ad7c2ebc2663e77a1663a705fe3" prot="public" virt="non-virtual"><scope>Artist</scope><name>~Artist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
